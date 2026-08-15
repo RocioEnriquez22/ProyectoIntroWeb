@@ -1,4 +1,50 @@
-#Jujuy{
-    fill: aqua;
+
+
+
+
+
+/*css para el mapa SVG*/
+path {
+  stroke: #6b5b3c;
+  stroke-width: 0.3;
 }
 
+.regionNoroeste {
+  fill: #ebab17c4;     
+}
+
+.grupo-noroeste:hover .regionNoroeste{
+    fill: #ebab17;  
+}
+
+
+.regionPatagonia{
+    fill: rgba(20, 170, 170, 0.297) ;
+}
+
+.grupo-patagonia:hover .regionPatagonia{
+    fill:rgba(59, 181, 229, 0.833);
+}
+
+.regionNoreste{
+    fill: rgba(102, 188, 10, 0.756) ;
+}
+.grupo-noreste:hover .regionNoreste{
+     fill: rgba(102, 188, 10, 0.918) ;
+}
+
+.regionCentro{
+    fill:rgba(234, 234, 51, 0.459);
+}
+
+.grupo-centro:hover .regionCentro{
+    fill:rgb(234, 234, 51); 
+}
+
+.regionPatagoniaAustral{
+    fill: #01b4eb6c;
+}
+
+.grupo-patagoniaAustral:hover .regionPatagoniaAustral{
+    fill:#01B5EB;
+}
