@@ -1,27 +1,32 @@
 /*Centralizacion de la imagen svg*/
 html,
 body {
+    font-family: 'Google Sans Flex', sans-serif !important;
     margin: 0;
     height: 100vh;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    background-color: #DEE2E6;
 }
 
+
+
 main {
-    height: 70vh;
+    height: 75vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    
 }
 
 header {
-    background-color: #01B5EB;
+    background-color:#0F5132;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 15vh;
+    height: 12vh;
 }
 
 
@@ -29,20 +34,21 @@ footer {
     background-color: #000607;
     display: flex;
     justify-content: center;
-    height: 15vh;
+    height: 10vh;
+    background-color:#0F5132 ;
 }
 
 .contenedor-mapa {
     width: 100%;
-    height: 100%;
+    height: 85%;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
 }
 
 .mapa-arg {
     height: 100%;
-    max-height: 90%;
+    max-height: 96%;
     width: auto;
     max-width: 100%;
 }
@@ -50,6 +56,7 @@ footer {
 h1 {
     margin: 0;
 }
+
 
 /*css para el mapa SVG*/
 /*Tenemos que decidir si lo hacemos con sombra o sin solo con cambio de color*/
@@ -60,7 +67,7 @@ path {
 
 .regionNoroeste {
     fill: #ebab17c4;
-    transition: filter 0.9s ease, fill 0.9s ease;
+    transition: filter 1.1s ease, fill 1.1s ease;
 }
 
 
@@ -74,7 +81,7 @@ path {
 
 .regionPatagonia {
     fill: rgba(20, 170, 170, 0.297);
-    transition: filter 0.9s ease, fill 0.9s ease;
+    transition: filter 1.1s ease, fill 1.1s ease;
 }
 
 .grupo-patagonia:hover .regionPatagonia {
@@ -85,7 +92,7 @@ path {
 
 .regionNoreste {
     fill: rgba(102, 188, 10, 0.756);
-    transition: filter 0.9s ease, fill 0.9s ease;
+    transition: filter 1.1s ease, fill 1.1s ease;
 }
 
 .grupo-noreste:hover .regionNoreste {
@@ -96,7 +103,7 @@ path {
 
 .regionCentro {
     fill: rgba(234, 234, 51, 0.459);
-    transition: filter 0.9s ease, fill 0.9s ease;
+    transition: filter 1.1s ease, fill 1.1s ease;
 }
 
 .grupo-centro:hover .regionCentro {
@@ -107,7 +114,7 @@ path {
 
 .regionPatagoniaAustral {
     fill: #01b4eb6c;
-    transition: filter 0.9s ease, fill 0.9s ease;
+    transition: filter 1.1s ease, fill 1.1s ease;
 }
 
 .grupo-patagoniaAustral:hover .regionPatagoniaAustral {
