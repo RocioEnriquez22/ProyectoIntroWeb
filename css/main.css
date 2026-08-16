@@ -1,111 +1,117 @@
-
 /*Centralizacion de la imagen svg*/
-html, body {
+html,
+body {
     margin: 0;
-  min-height: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-main{
-    flex: 0 0 70%; /* ocupa 70% fijo */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
- 
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
-header{
+main {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+header {
     background-color: #01B5EB;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex: 0 0 15%;
+    height: 15vh;
 }
 
 
-footer{
+footer {
     background-color: #000607;
     display: flex;
     justify-content: center;
-    flex: 0 0 15%;
+    height: 15vh;
 }
 
-.contenedor-SVG{
+.contenedor-mapa {
     width: 100%;
     height: 100%;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
 }
 
-.contenedor-SVG svg{
-    max-width: 100%;
+.mapa-arg {
     height: 100%;
-    margin-left: 30%;
-    padding-left: 10%;     
+    max-height: 90%;
+    width: auto;
+    max-width: 100%;
 }
 
-h1{
+h1 {
     margin: 0;
 }
 
-/*css para el mapa SVG*/ 
+/*css para el mapa SVG*/
 /*Tenemos que decidir si lo hacemos con sombra o sin solo con cambio de color*/
 path {
-  stroke: #6b5b3c;
-  stroke-width: 0.3;
+    stroke: #6b5b3c;
+    stroke-width: 0.3;
 }
 
 .regionNoroeste {
-  fill: #ebab17c4;
-  transition: filter 0.9s ease, fill 0.9s ease;     
+    fill: #ebab17c4;
+    transition: filter 0.9s ease, fill 0.9s ease;
 }
 
 
-.grupo-noroeste:hover .regionNoroeste{
-    fill: #ebab17;  
+.grupo-noroeste:hover .regionNoroeste {
+    cursor: pointer;
+    filter:brightness(0.85);
+    fill: #ebab17;
+    
+}
+
+
+.regionPatagonia {
+    fill: rgba(20, 170, 170, 0.297);
+    transition: filter 0.9s ease, fill 0.9s ease;
+}
+
+.grupo-patagonia:hover .regionPatagonia {
+    cursor: pointer;
+    fill: rgba(59, 181, 229, 0.833);
     filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.25));
 }
 
-
-.regionPatagonia{
-    fill: rgba(20, 170, 170, 0.297) ;
-    transition: filter 0.9s ease, fill 0.9s ease; 
+.regionNoreste {
+    fill: rgba(102, 188, 10, 0.756);
+    transition: filter 0.9s ease, fill 0.9s ease;
 }
 
-.grupo-patagonia:hover .regionPatagonia{
-    fill:rgba(59, 181, 229, 0.833);
+.grupo-noreste:hover .regionNoreste {
+    cursor: pointer;
+    fill: rgba(102, 188, 10, 0.918);
     filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.25));
 }
 
-.regionNoreste{
-    fill: rgba(102, 188, 10, 0.756) ;
-    transition: filter 0.9s ease, fill 0.9s ease; 
-}
-.grupo-noreste:hover .regionNoreste{
-     fill: rgba(102, 188, 10, 0.918) ;
-     filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.25));
+.regionCentro {
+    fill: rgba(234, 234, 51, 0.459);
+    transition: filter 0.9s ease, fill 0.9s ease;
 }
 
-.regionCentro{
-    fill:rgba(234, 234, 51, 0.459);
-    transition: filter 0.9s ease, fill 0.9s ease; 
-}
-
-.grupo-centro:hover .regionCentro{
-    fill:rgb(234, 234, 51); 
+.grupo-centro:hover .regionCentro {
+    cursor: pointer;
+    fill: rgb(234, 234, 51);
     filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.25));
 }
 
-.regionPatagoniaAustral{
+.regionPatagoniaAustral {
     fill: #01b4eb6c;
-    transition: filter 0.9s ease, fill 0.9s ease; 
+    transition: filter 0.9s ease, fill 0.9s ease;
 }
 
-.grupo-patagoniaAustral:hover .regionPatagoniaAustral{
-    fill:#01B5EB;
+.grupo-patagoniaAustral:hover .regionPatagoniaAustral {
+    cursor: pointer;
+    fill: #01B5EB;
     filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.25));
 }
-
