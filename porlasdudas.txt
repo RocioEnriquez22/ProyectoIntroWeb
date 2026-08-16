@@ -1,35 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 1200">
-            <clipPath id="um-layer-canvas-clip">
-                <rect x="0" y="0" width="1200" height="1200" transform="translate(-327.81399280557287,-10)" />
-            </clipPath>
-            <filter id="effect-box-shadow-1">
-                <feDropShadow stdDeviation="10" dx="0" dy="0" flood-color="black" flood-opacity="0.25" />
-            </filter>
-            <filter id="effect-box-shadow-2">
-                <feDropShadow stdDeviation="0" dx="3" dy="3" flood-color="black" flood-opacity="0.25" />
-            </filter>
-            <filter id="effect-box-shadow-3">
-                <feDropShadow stdDeviation="10" dx="0" dy="0" flood-color="white" flood-opacity="0.9" />
-            </filter>
-            <filter id="effect-white-outline" color-interpolation-filters="sRGB">
-                <feMorphology in="SourceAlpha" result="MORPH" operator="dilate" radius="1.05" />
-                <feColorMatrix in="MORPH" result="WHITENED" type="matrix"
-                    values="-1 0 0 0 1, 0 -1 0 0 1, 0 0 -1 0 1, 0 0 0 0.95 0" />
-                <feMerge>
-                    <feMergeNode in="WHITENED" />
-                    <feMergeNode in="SourceGraphic" />
-                </feMerge>
-            </filter>
-            <filter id="effect-dark-outline" color-interpolation-filters="sRGB">
-                <feMorphology in="SourceAlpha" result="MORPH" operator="dilate" radius="1.05" />
-                <feColorMatrix in="MORPH" result="DARKENED" type="matrix"
-                    values="0 0 0 0 0, 0 0 0 0 0, 0 0 0 0 0, 0 0 0 0.75 0" />
-                <feMerge>
-                    <feMergeNode in="DARKENED" />
-                    <feMergeNode in="SourceGraphic" />
-                </feMerge>
-            </filter>
-            <rect id="um-layer-canvas-background" x="0" y="0" width="1200" height="1200" fill="#FFFFFF00" />
+
             <g id="um-layer-map" transform="translate(327.81399280557287,10),scale(1,1)"
                 clip-path="url(#um-layer-canvas-clip)">
                 <rect id="um-layer-map-background" x="0" y="0" width="544.3720143888543" height="1180" fill="#ffffff00"
