@@ -56,9 +56,13 @@ header {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    height: 11vh;
+    height: 20%;
 }
 
+header.container-fluid{
+    flex-shrink: 0;
+    height: 10.2%;
+}
 
 footer {
     background-color: #000607;
@@ -85,7 +89,7 @@ footer {
 
 h1 {
     margin: 0 !important;
-    font-size: x-large !important;
+    font-size: 1.4rem !important;
     color: white !important;
 }
 
@@ -116,7 +120,17 @@ h2.h2-cards{
 div .card-body{
     padding-top: 0.6rem;
 }
+.card-title{
+    letter-spacing: 0.036rem;
+    height: 30%;
+    padding-top: 0.3rem;
+}
 
+
+.footer-cards{
+    margin-top: 2.6rem;
+    min-height: 5rem;
+}
 
 
 /*css para el mapa SVG*/
@@ -142,13 +156,13 @@ path {
 
 
 .regionPatagonia {
-    fill: rgba(20, 170, 170, 0.297);
+    fill: 	#20b25867;
     transition: filter 0.75s ease, fill 0.75s ease;
 }
 
 .grupo-patagonia:hover .regionPatagonia {
     cursor: pointer;
-    fill: #3bb5e5d4;
+    fill: #20b258;
     filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.80));
 }
 
@@ -175,12 +189,12 @@ path {
 }
 
 .regionPatagoniaAustral {
-    fill: #01b4eb6c;
+    fill: 	#86d6d8;
     transition: filter 0.75s ease, fill 0.75s ease;
 }
 
 .grupo-patagoniaAustral:hover .regionPatagoniaAustral {
     cursor: pointer;
-    fill: #01B5EB;
+    fill: #20c3d0;
     filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.80));
 }
