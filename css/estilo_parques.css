@@ -1,0 +1,100 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+html {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+body {
+    background-color: #f4f4f4;
+}
+
+/* 2. header y nav*/
+header {
+    background-color: #2D6566; 
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap; /* Si la pantalla es muy chica, los botones bajan solos */
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 8px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+header nav a:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+/* main */
+main {
+    max-width: 800px; /* Limita el ancho en pantallas grandes para que no se estire de más */
+    margin: 20px auto; /* Centra el main en la pantalla */
+    padding: 0 15px;   /* Deja un margen lateral en celulares */
+}
+
+section {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+/* ========================================= */
+/* CARRUSEL DE BIODIVERSIDAD (Básico)        */
+/* ========================================= */
+
+.carrusel {
+    display: flex; 
+    overflow-x: scroll; /*ponemos una barra de desplazamiento*/
+    gap: 15px; /*espacio entre las fotos*/
+    padding: 15px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+}
+
+.carrusel img {
+    width: 280px;
+    height: 250px;
+    object-fit: cover; 
+    border-radius: 5px; /* borde redondeado */
+}
+
+/*aside, información complementaria */
+aside {
+    background-color: #e2ecd9;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+aside ul{
+    list-style: none;
+}
+
+/* footer*/
+footer {
+    background-color: #2D6566;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+}
