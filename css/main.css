@@ -13,7 +13,7 @@ body {
 
 
 main {
-    
+    height: 83vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -21,6 +21,7 @@ main {
     
 }
 main.conteiner-fluid.main-cards{
+    display: flex;
     flex: 1;
 }
 
@@ -57,7 +58,7 @@ footer {
     background-color: #000607;
     display: flex;
     justify-content: center;
-    height: 10vh;
+    height: 13vh;
     background-color: #2D6566;
 }
 
