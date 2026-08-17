@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parque nacional Copo </title>
+    <link rel="icon" href="../../imgs/logosParques/logo_pn_copo.png" type="image/x-icon">
+
+</head>
+
+<body>
+    <header>
+        <h1>Parque Nacional Copo</h1>
+
+        <nav>
+            <ul>
+                <li><a href="#introduccion">Inicio</a></li>
+                <li><a href="#biodiversidad">Flora y fauna</a></li>
+                <li><a href="#visitas">Visitanos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="introduccion">
+            <p>Ubicado en el norte de Santiago del Estero, es un refugio para la biodiversidad del Chaco Semiárido, donde la vida se abre paso entre condiciones hostiles y ausencia de cuerpos de agua.</p>
+            <p>Fue creado en respuesta a la deforestación causada por la explotación forestal intensiva, el área conserva bosques originales de quebracho colorado y blanco, guayacán, algarrobo, itín y mistol.</p>
+            <p>Posee un clima subtropical cálido, con estación seca marcada y gran amplitud térmica. Las precipitaciones alcanzan los 700 mm anuales, concentrados entre octubre y marzo. Las temperaturas medias son de 15° C en invierno (con bajo porcentaje de heladas) y 28° C en verano (con máximas absolutas que superan los 50° C).</p>
+        </section>
+        <section id="biodiversidad">
+            <h2>Flora</h2>
+            <p>Además del quebracho colorado santiagueño (Schinopsis lorentzii) integran estos espinosos bosques árboles como el quebracho blanco, el itín, el guayacán, el mistol y el yuchán (palo borracho), entre muchos otros. En antiguos cauces de ríos se desarrollan pastizales.</p>
+            <img src="" alt="">
+            <h2>Fauna</h2>
+            <p>Hay tres representantes de nuestra fauna en peligro de extinción que habitan este Parque Nacional, que merecen destacarse: el yaguareté, el tatú carreta y el chancho quimilero. Este último denominado así porque se alimenta de los frutos y pencas del quimil (Opuntia quimilo), un cactus arborescente típico de esta región. Pero también el oso hormiguero grande, el águila coronada y la boa de las vizcacheras, entre otras especies amenazadas de la fauna nativa.</p>
+            <div class="carrusel">
+                <img src="../../imgs/pqCopo/carrusel_pn_copo_01.jpg" alt="Camino de tierra.">
+                <img src="../../imgs/pqCopo/carrusel_pn_copo_02.jpg" alt="Cactus.">
+                <img src="../../imgs/pqCopo/carrusel_pn_copo_03.jpg" alt="Corzuela.">
+                <img src="../../imgs/pqCopo/carrusel_pn_copo_04.jpg" alt="Muro de tierra.">
+                <img src="../../imgs/pqCopo/carrusel_pn_copo_05.jpg" alt="Mono en una rama.">
+                <img src="../../imgs/pqCopo/pn_copo_ecosistema_ph_parquesnacionales6.jpg" alt="Bosque visto desde arriba.">
+            </div>
+        </section>
+        <aside id="visitas">
+            <h2>¡Te esperamos!</h2>
+            <ul>
+                <li>Acceso: Gratuito</li>
+                <li>Horario: De 7:00 a 15:00</li>
+                <li>Ubicación: Ruta Nacional 16, Acceso Francisco Solano 20, Pampa de los Guanacos (3712), Santiago del Estero.</li>
+            </ul>
+        </aside>
+    </main>
+    <footer>
+        <p>Contacto: copo@apn.gob.ar | Teléfono: 03841-400-606</p>
+        <p>2026 - Proyecto sobre Parques Nacionales</p>
+    </footer>
+</body>
+
+</html>
