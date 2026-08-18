@@ -9,8 +9,7 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
-   
-    background-color: #DEE2E6;
+   background-color: #f4f4f4;
 }
 
 
@@ -23,12 +22,15 @@ main {
     align-items: center;
     
 }
+
+
 main.container-fluid.main-cards{
     height: auto;
     display: flex;
     justify-content: flex-start;
     padding-left: 5rem;
     padding-right: 5rem;
+    background-color: #F4F4F4;
 }
 
 /*css de logo*/
@@ -51,17 +53,25 @@ main.container-fluid.main-cards{
     display: inline-block;
 }
 
+.col a{
+    text-decoration: none;
+    color: inherit;
+    
+}
+
 header {
     background-color:#2D6566;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     height: 20%;
+   
 }
 
 header.container-fluid{
     flex-shrink: 0;
     height: 10.2%;
+    padding-left: 2rem;
 }
 
 footer {
@@ -77,7 +87,9 @@ footer {
     height: 85%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    padding-left: 15%;
+    padding-right: 4rem;
 }
 
 .mapa-arg {
@@ -95,6 +107,11 @@ h1 {
 
 h2{
     margin-top: 1.15rem !important;
+    font-size: 1.5rem !important;
+}
+
+h3{
+    font-size: 1.3rem !important;
 }
 
 h2.h2-cards{
@@ -107,9 +124,15 @@ h2.h2-cards{
 }
 
 .card.h-100{
-    border-color: #00000061 ;
-    border-radius: 0.7rem;
+    
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.187);
+    transition: filter 0.6s ease, fill 0.75s ease;
+}
 
+.card.h-100:hover{
+    cursor: pointer;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.397));
 }
 
 .card-img-top{
@@ -122,8 +145,9 @@ div .card-body{
 }
 .card-title{
     letter-spacing: 0.036rem;
-    height: 30%;
+    height: 20%;
     padding-top: 0.3rem;
+    padding-left: 1.2rem;
 }
 
 
