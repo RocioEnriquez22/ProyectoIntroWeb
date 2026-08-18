@@ -244,6 +244,18 @@ path {
     filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.80));
 }
 
+@media (max-width: 1600px){
+    .contenedor-mapa {
+        padding-left: 15rem;
+        padding-right:15rem;
+    }
+}
+
+@media (max-width:970px){
+    #info-region {
+    display: flex !important;
+    }
+}
 
 @media (max-width:513px) {
     header.container-fluid{
@@ -269,6 +281,11 @@ path {
     .contenedor-mapa{
         justify-content: center;
     }
+    #info-region {
+         display: block !important; 
+        visibility: visible !important;
+        opacity: 1 !important;
+    }
 
 }
 
@@ -279,5 +296,8 @@ path {
     h3{
         font-size: 0.9rem !important;
     }
-}
+    #info-region {
+        display: none !important;
+    }
 
+}
