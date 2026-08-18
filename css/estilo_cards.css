@@ -1,0 +1,16 @@
+.footer-cards{
+    margin-top: 2.6rem;
+    min-height: 5rem;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+
+}
+.footer-contenedor{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    gap: 20px;
+}
