@@ -11,7 +11,7 @@ const anchoPermitido = 1060;
 
 if (anchoPantalla < anchoPermitido) { infoBox.remove(); }
 
-if(esTactil){
+if (esTactil) {
     infoBox.remove();
     contenedorMapa.style.justifyContent = 'center';
 
@@ -22,7 +22,8 @@ noaGroup.addEventListener('mouseenter', () => {
     if (anchoPantalla >= anchoPermitido) {
         infoBox.style.display = 'flex';
         infoBox.style.flex = '1';
-        infoBox.style.objectFit = 'cover'; infoBox.style.backgroundImage = "url('./imgs/pqCalilegua/carrusel_pn_calilegua_04.jpg')";
+        infoBox.style.objectFit = 'cover';
+        infoBox.style.backgroundImage = "url('./imgs/pqCalilegua/carrusel_pn_calilegua_04.jpg')";
         titulo.textContent = "Región NOA";
         descripcion.textContent = "El Noroeste Argentino destaca por sus paisajes andinos, cerros de colores y una rica cultura ancestral.";
     }
