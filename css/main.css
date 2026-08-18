@@ -93,6 +93,7 @@ footer {
     justify-content: flex-start;
     padding-left: 15%;
     padding-right: 4rem;
+        padding-bottom: .2rem;
 }
 
 .mapa-arg {
@@ -100,6 +101,20 @@ footer {
     max-height: 96%;
     width: auto;
     max-width: 100%;
+}
+
+.info-region {
+    display: none; /* Oculto por defecto */
+    width: 300px;
+    height: 400px;
+    padding: 20px;
+    border-radius: 15px;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 h1 {
@@ -265,3 +280,4 @@ path {
         font-size: 0.9rem !important;
     }
 }
+
