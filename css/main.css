@@ -84,6 +84,10 @@ footer {
     height: 13vh;
     background-color: #2D6566;
 }
+footer p{
+    color: #FFFFFF;
+    margin: auto;
+}
 
 .contenedor-mapa {
     width: 100%;
