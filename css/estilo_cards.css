@@ -39,4 +39,19 @@
     align-items: center;
     height: auto;
 }
+@media (max-width: 927px) and (min-width:710px){
+  .main-cards .row {
+    --bs-rows-cols: 2;} 
+    /* Variable de Bootstrap 5 para controlar columnas */
+    .main-cards .row > * {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+}
 
+@media (max-width:460px) {
+    main.container-fluid.main-cards{
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+}
