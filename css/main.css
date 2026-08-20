@@ -163,6 +163,7 @@ h2.h2-cards{
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.187);
     transition: filter 0.6s ease, fill 0.75s ease;
+    justify-content: space-between;
 }
 
 .card.h-100:hover{
@@ -171,7 +172,7 @@ h2.h2-cards{
 }
 
 .card-img-top{
-    height: 35% ;
+    height: 14rem ;
     object-fit: cover;
 }
 
@@ -197,9 +198,6 @@ p.provincia{
     text-align: center;
     align-content: center;
 }
-
-
-
 
 
 /*css para el mapa SVG*/

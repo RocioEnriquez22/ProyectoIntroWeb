@@ -18,3 +18,25 @@
 .footer-legal p{
     margin: 0;
 }
+
+.redes-iconos{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: .3rem;
+    justify-content: center;
+    margin-bottom: 0.7rem;
+}
+
+.redes-iconos a img{
+    width: 2.6rem;
+    height: auto;
+    object-fit: cover;
+}
+
+.redes-iconos a {
+    display: flex;
+    align-items: center;
+    height: auto;
+}
+
