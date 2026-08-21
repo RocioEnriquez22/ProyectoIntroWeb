@@ -131,3 +131,25 @@ footer h3{
     height: 30px;
     fill: whitesmoke;
 }
+
+/*Animacion de carrusell*/
+@keyframes scroll-automatico {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-280px * 4)); } /* Ancho de imagen * cantidad */
+}
+
+.carrusel {
+  display: flex;
+  overflow: hidden; /* Ocultamos la barra para que se vea mejor */
+  white-space: nowrap;
+}
+
+.carrusel img {
+  flex-shrink: 0;
+  animation: scroll-automatico 12s linear infinite;
+}
+
+/* Pausar al pasar el ratón */
+.carrusel:hover img {
+  animation-play-state: paused;
+}

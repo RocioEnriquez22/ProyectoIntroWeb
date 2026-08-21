@@ -39,7 +39,7 @@
     align-items: center;
     height: auto;
 }
-@media (max-width: 927px) and (min-width:710px){
+@media (max-width: 1010px) and (min-width:710px){
   .main-cards .row {
     --bs-rows-cols: 2;} 
     /* Variable de Bootstrap 5 para controlar columnas */
@@ -47,11 +47,19 @@
         flex: 0 0 auto;
         width: 50%;
     }
+    .redes-iconos a img{
+    width: 2rem !important;
+    }
 }
 
-@media (max-width:460px) {
+@media (max-width:480px) {
     main.container-fluid.main-cards{
         padding-left: 3rem;
         padding-right: 3rem;
+    }
+    
+    .redes-iconos a img{
+    width: 2.1rem !important;
+    
     }
 }

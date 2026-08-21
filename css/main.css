@@ -282,6 +282,11 @@ path {
     .card-img-top{
         flex-shrink: 0;
     }
+    .redes-iconos a img{
+    width: 2.3rem !important;
+    
+    }
+
 }
 
 @media (max-width:970px){
