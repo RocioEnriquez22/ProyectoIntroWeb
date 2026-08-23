@@ -39,6 +39,11 @@
     align-items: center;
     height: auto;
 }
+
+section.my-5{
+    margin-bottom: 2.5rem !important;
+}
+
 @media (max-width: 1010px) and (min-width:710px){
   .main-cards .row {
     --bs-rows-cols: 2;} 
@@ -49,6 +54,9 @@
     }
     .redes-iconos a img{
     width: 2rem !important;
+    }
+    div.form{
+        width: 75% !important;;
     }
 }
 
@@ -63,3 +71,4 @@
     
     }
 }
+
