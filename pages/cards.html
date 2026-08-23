@@ -6,7 +6,7 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <title>Nuestras Reservas</title>
     <link rel='stylesheet' href='../css/main.css'>
-    
+
     <link rel="icon" href="..\favicon.ico" type="image/x-icon">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -15,7 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="../css/estilo_cards.css">
-    
+
 </head>
 
 <body class="body-cards">
@@ -191,14 +191,47 @@
                 </a>
             </div>
         </div>
+        <section class="container my-5">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-8 col-lg-6">
+                    <div class="card shadow-sm border-0">
+                        <div class="card-body p-4 p-md-5">
+                            <h3 class="text-center mb-4 text-dark fw-semibold">¿Tenes alguna sugerencia? ¡Contanos!</h3>
+                            <form id="form-contacto">
+                                <!--SDK EmailJS-->
+                                <script
+                                    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+                                <div class="mb-3">
+                                    <label for="nombre1" 
+                                        class="form-label fs-6 text-dark fw-semibold">Nombre</label>
+                                    <input type="text" name="nombre" class="form-control" id="nombre1" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email1"
+                                        class="form-label fs-6 text-dark fw-semibold">Email</label>
+                                    <input type="text" name="email" class="form-control" id="email1" required>
+                                </div>
+                                <div class="mb-4">
+                                    <label for="mensaje1" class="form-label"></label>
+                                    <textarea name="mensaje" class="form-control" id="mensaje1" rows="4"
+                                        placeholder="Escribe tu mensaje aquí." required></textarea>
+                                </div>
+                                <button type="submit" id="boton" class="btn w-100 text-white"
+                                    style="background-color: #2D6566;">Enviar</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer class="footer-cards">
-            <div class="footer-contacto">
-                <h3>Contacto</h3>
-                <p>Email: drnoa@apn.gob.ar</p>
-                <p>Teléfono: 0387-431-0255 | 0387-422-7093</p>
-            </div>
-        <div class = "footer-legal">
+        <div class="footer-contacto">
+            <h3>Contacto</h3>
+            <p>Email: drnoa@apn.gob.ar</p>
+            <p>Teléfono: 0387-431-0255 | 0387-422-7093</p>
+        </div>
+        <div class="footer-legal">
             <p>2026 - Proyecto sobre Parques nacionales.</p>
         </div>
     </footer>
@@ -206,6 +239,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
         </script>
+
+    <script src="../js/script_email.js"></script>
 </body>
 
 </html>
