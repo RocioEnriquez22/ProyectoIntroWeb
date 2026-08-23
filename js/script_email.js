@@ -1,13 +1,9 @@
 
 // 1. REEMPLAZA CON TU PUBLIC KEY
-console.log("Script emailjs funcionando...")
 emailjs.init("0JT-lGkMn2Ab_Owqc");
 
 const form = document.getElementById('form-contacto');
 const btn = document.getElementById('boton');
-
-console.log(form)
-console.log(btn)
 
 form.addEventListener('submit', function (e) {
     e.preventDefault();
@@ -16,9 +12,6 @@ form.addEventListener('submit', function (e) {
     const nombreValor = document.getElementById('nombre1').value.trim();
     const emailValor = document.getElementById('email1').value.trim();
     const mensajeValor = document.getElementById('mensaje1').value.trim();
-    console.log("nombre:" + nombreValor);
-    console.log("email: " + emailValor);
-    console.log("mensaje: " + mensajeValor);
 
     if(nombreValor === '' || emailValor === '' || mensajeValor === ''){
         alert('Completa todos los campos correctamente.');
