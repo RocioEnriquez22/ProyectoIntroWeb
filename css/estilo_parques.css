@@ -100,18 +100,23 @@ section {
 /*Carrusel*/
 .carrusel {
     display: flex; 
-    overflow-x: scroll; /*ponemos una barra de desplazamiento*/
+    overflow: hidden; /* Ocultamos la barra para que se vea mejor */
     gap: 15px; /*espacio entre las fotos*/
     padding: 15px;
     background-color: #f0f0f0;
     border: 1px solid #ccc;
+    white-space: nowrap;
 }
+
+
 
 .carrusel img {
     width: 280px;
     height: 250px;
     object-fit: cover; 
     border-radius: 5px; /* borde redondeado */
+    flex-shrink: 0;
+     animation: scroll-automatico 12s linear infinite;
 }
 
 /*aside, información complementaria */
@@ -173,16 +178,8 @@ footer h3{
   100% { transform: translateX(calc(-280px * 4)); } /* Ancho de imagen * cantidad */
 }
 
-.carrusel {
-  display: flex;
-  overflow: hidden; /* Ocultamos la barra para que se vea mejor */
-  white-space: nowrap;
-}
 
-.carrusel img {
-  flex-shrink: 0;
-  animation: scroll-automatico 12s linear infinite;
-}
+
 
 /* Pausar al pasar el ratón */
 .carrusel:hover img {
